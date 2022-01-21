@@ -1,6 +1,10 @@
-
+body{
+    background: gray;
+}
 .header{
    text-align: center;   
+   
+   
 }
 .mastery{
     text-align: center;
@@ -15,12 +19,30 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
+    font-weight: bold;
 }
 
 
 #info{
     padding-left: 150px;
     padding-right:150px;
+    font-size: 20px;
 }
 
+h1{
+    color:black;
+    background: linear-gradient(gray,red, gray);
+    font-family: Arial;
+    font-size: 5em;
+}
+
+.nav{
+    list-style-type: none;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.navlink{
+    display: inline;
+}
 
