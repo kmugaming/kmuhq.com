@@ -1,0 +1,46 @@
+body{
+    background-color: white;
+}
+h1{
+    text-align: center;
+}
+
+p{
+    padding-left: 15px;
+    padding-right: 100px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.skill{
+    height: 15px;
+    width: 15px;
+    
+}
+
+#contenttable{
+    height: 100px;
+    width: 150px;
+    border: 2px solid black;
+    padding: 15px;
+    background-color: white;
+    
+}
+
+.skillimgbox{
+    border: 1px solid red;
+    height:700px;
+    width:1100px;
+}
+
+.skilllist{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.skilldiscript{
+    padding-left: 15px;
+}

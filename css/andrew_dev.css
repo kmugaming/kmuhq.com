@@ -2,5 +2,13 @@
 while i am coding unlink this page when done working
 and ready to merge*/
 div{
-    border: 1px solid black;  
+    border: 1px solid black; 
+}
+
+h1, h2{
+    border: 1px solid blue; 
+}
+
+p{
+    border: 1px solid green; 
 }
