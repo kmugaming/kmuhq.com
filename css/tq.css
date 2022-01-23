@@ -2,7 +2,9 @@ body{
     background: gray;
 }
 .header{
-   text-align: center;      
+   text-align: center;   
+   
+   
 }
 .mastery{
     text-align: center;
@@ -28,18 +30,10 @@ body{
 }
 
 h1{
-    height: 150px;
-    text-align: center;
-    background: linear-gradient(gray,rgb(11, 37, 87), gray);
+    color:black;
+    background: linear-gradient(gray,red, gray);
     font-family: Arial;
     font-size: 5em;
-    color: rgb(138, 93, 11);
-   
-   text-shadow: 0px 0px 2px red,
-                5px 2px 4px black;
-
-    
-   
 }
 
 .nav{
