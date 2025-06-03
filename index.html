@@ -1,4 +1,20 @@
 <!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+<script>
+    // filepath: /home/alexander/code/kmuhq.com/index.html
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggleButton = document.querySelector('.toggle-button');
+        const closeButton = document.querySelector('.close-button');
+        const navList = document.querySelector('#nav-list');
+    
+        toggleButton.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+        closeButton.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+    });
+    </script>
 <html>
     <header>
         <title>KMU</title>
@@ -8,25 +24,25 @@
     </header>
     <body>
         <nav id="navbar">
-            <h1 class="gradient-text">Kitty Munition Unlimited</h1>
-            <ul>
+            <img class="logo" id="logo" src="img/KMU-Cat.png" alt="KMU Logo" />
+            <h1>Kitty Munitions Unlimited</h1>
+            <ul id="nav-list">
+                <li><button class="close-button">X</button></li>
                 <li><a href="">Home</a></li>
-                <li><a href="">Videos</a></li>
-                <li><a href="">Members</a></li>
+                <li><a href="fundraising.html">Fundraising</a></li>
+                <li><a target="_blank" href="https://www.youtube.com/@kmuhq">YouTube</a></li>
             </ul>
+            <button class="toggle-button">&#9776;</button>
         </nav>
 
-        <img id="banner" src="img/banner_cat.jpg" />
-        <div class="header-text">
-            <h2>💎Welcome to KMU gaming!💎</h2>
-        </div>
+        <img id="banner" src="img/banner_cat.png" />
 
-        <p class="center-text">This is Kitty Munition Unlimited Gaming, where we just can't stop GAMING!</p>
-        
-        <h3>List of games we play and what we play on</h3>
+        <h2 class="center-text">💎 Welcome to KMU gaming! 💎</h2>
+        <p class="center-text">This is Kitty Munitions Unlimited Gaming, where we just can't stop GAMING!</p>
+        <h3 class="center-text">List of games we play and what we play on</h3>
         
         <div class="listcontainer">
-            <div id="gamelist" class="card">
+            <div class="card">
                 <ul>
                     <li>Minecraft</li>
                     <li><a href="titanquest.html">Titan Quest</a></li>
@@ -35,7 +51,7 @@
                     <li>Ghost Squad</li>
                 </ul>
             </div>
-            <div id="platformlist" class="card">
+            <div class="card">
                 <ol>
                     <li>PC - Steam</li>
                     <li>Xbox</li>
@@ -44,7 +60,8 @@
                 </ol>
             </div>
         </div>
-    <footer>&copy; 2022 - KMU Gaming</footer>
+
+    <footer class="center-text">&copy; 2025 - KMU Gaming</footer>
     
     </body>
 </html>
