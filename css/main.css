@@ -218,10 +218,31 @@ nav#navbar {
     right: 60px; /* Adjust as needed */
 }
 
+.icondisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 2em;
+    background: rgba(0, 0, 0, 0.4); /* semi-transparent dark background */
+  backdrop-filter: blur(12px); /* frosted glass effect */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+
+  border: 2px solid rgba(0, 255, 255, 0.4); /* neon cyan border */
+  border-radius: 20px;
+
+  box-shadow:
+    0 0 10px rgba(0, 255, 255, 0.6),
+    0 0 20px rgba(255, 0, 255, 0.3);
+
+  padding: 20px;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif; /* optional cyberpunk-style font */
+}
+
 .icondisplay li {
     list-style: none;
-    padding: 0px 1em;
-    color: #000;
+    padding: 1em;
 }
 
 .icondisplay li span {
