@@ -222,7 +222,7 @@ nav#navbar {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 3em 2em;
+    margin: 1em 2em 5em 2em;
     background: rgba(0, 0, 0, 0.4); /* semi-transparent dark background */
   backdrop-filter: blur(12px); /* frosted glass effect */
   -webkit-backdrop-filter: blur(12px); /* Safari support */
