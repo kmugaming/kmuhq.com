@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KMU Wallpapers</title>
+  <link rel="stylesheet" href="css/wallpapers.css" />
+</head>
+<body>
+  <header>
+    <h1>KMU Wallpapers</h1>
+    <nav>
+      <a href="index.html" class="home-link">← Back to Home</a>
+    </nav>
+  </header>
+
+  <main class="gallery">
+    <!-- JavaScript will populate the gallery here -->
+  </main>
+
+  <script>
+    // ✅ Update this list only when adding/removing wallpapers
+    const wallpapers = [
+      "KMU_pride.png",
+      "KMU_space.png"
+    ];
+
+    const gallery = document.querySelector('.gallery');
+
+    wallpapers.forEach(filename => {
+      const card = document.createElement('div');
+      card.className = 'wallpaper-card';
+
+      const img = document.createElement('img');
+      img.src = `wallpapers/${filename}`;
+      img.alt = filename.replace(/[-_]/g, ' ').replace('.png', '');
+
+      const downloadLink = document.createElement('a');
+      downloadLink.className = 'download-btn';
+      downloadLink.href = img.src;
+      downloadLink.download = '';
+      downloadLink.textContent = 'Download';
+
+      card.appendChild(img);
+      card.appendChild(downloadLink);
+      gallery.appendChild(card);
+    });
+  </script>
+</body>
+</html>

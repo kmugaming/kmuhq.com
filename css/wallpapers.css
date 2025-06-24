@@ -1,0 +1,95 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f1a;
+  font-family: 'Orbitron', sans-serif;
+  color: #f0f0f0;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+.home-link {
+  color: #ff00ff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-shadow: 0 0 5px #ff00ff99;
+  transition: color 0.3s ease;
+}
+
+.home-link:hover {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+/* Gallery Layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 10px;
+}
+
+/* Wallpaper Cards */
+.wallpaper-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a2a;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff00ff33;
+  transition: transform 0.3s ease;
+}
+
+.wallpaper-card:hover {
+  transform: scale(1.02);
+}
+
+/* Images */
+.wallpaper-card img {
+  width: 100%;
+  border: 2px solid #00ffff55;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px #ff00ff88;
+}
+
+/* Download Button */
+.download-btn {
+  background-color: transparent;
+  color: #00ffff;
+  border: 2px solid #00ffff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 5px #00ffff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #00ffff33;
+  box-shadow: 0 0 15px #00ffffaa;
+  color: #ffffff;
+}

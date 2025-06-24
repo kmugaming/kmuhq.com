@@ -137,6 +137,12 @@ a {
     font-family: Audiowide;
 }
 
+ul.normallist {
+    padding-top: 0em;
+    margin-top: 0em;
+    margin-left: 2em;
+}
+
 .gradient-text{
     background-color: var(--color-lightblue);
     background-image: linear-gradient(180deg,
@@ -293,7 +299,7 @@ nav#navbar {
   }
 
 /* Styles for smaller screens - mobile view */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     nav#navbar ul {
         position: absolute;
         top: 0;
